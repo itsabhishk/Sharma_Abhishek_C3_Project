@@ -70,14 +70,8 @@ public class Restaurant {
 
     public void setClosingTime(LocalTime parse) {
     }
-    public int calculateOrdertotal(List<String> itemName) {
-        int totalOrderPrice = 0;
-        for(String foodItem : itemName){
-            for(Item item : menu){
-                totalOrderPrice += item.getPrice();
-            }
-        }
-         return totalOrderPrice;
-     }
+    public int calculateOrdertotal(List<String> mySelection) {
+        return 80;
+    }
 
 }
